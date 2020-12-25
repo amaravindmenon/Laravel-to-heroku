@@ -1,0 +1,57 @@
+Install heroku cli from website
+
+Login to your account using:	
+Heroku login
+
+
+Create a procfile in main folder:
+Write
+web: vendor/bin/heroku-app-apache2 public/
+
+
+Initialised git
+git init
+
+
+git add .
+
+
+
+git commit -m "initial release "
+
+
+Create an empty app in heroku
+Heroku create
+
+
+Git remote -v
+
+Git push heroku master
+
+
+IN HEROKU 
+GO to settings
+Click config vars
+Set APP_Debug
+Set App key
+
+
+Heroku config:add APP_NAME = LARVAEL
+
+
+Heroku pg:credentials:url
+
+
+Set database connection same as data
+
+
+Heroku config:add DB_Connection=pgsql
+Complete all db details
+
+
+Migrate database in 2 ways
+Using bash: 
+Heroku run bash
+Php artisan migrate
+OR
+Heroku run php artisan migrate
